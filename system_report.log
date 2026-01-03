@@ -1,0 +1,43 @@
+===== SYSTEM REPORT: 2025-12-23 12:56:22 =====
+--- CPU & MEMORY ---
+top - 12:56:22 up  5:18,  2 users,  load average: 0.01, 0.01, 0.02
+Tasks: 109 total,   1 running, 108 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   1968.1 total,   1064.9 free,    365.6 used,    697.8 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   1602.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3064 root      20   0   11928   5504   3456 R  10.0   0.3   0:00.01 top
+      1 root      20   0   22452  13576   9480 S   0.0   0.7   0:02.07 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     12 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
+     15 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.41 ksoftir+
+--- DISK USAGE (df) ---
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  1.1M  196M   1% /run
+/dev/sda2        25G  2.7G   21G  12% /
+tmpfs           985M     0  985M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           197M   12K  197M   1% /run/user/1000
+--- DIRECTORY USAGE (/home) ---
+32K	/home/sankar
+--- TOP PROCESSES (CPU) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        3068 50.0  0.2  10884  4480 pts/3    R+   12:56   0:00 ps aux --sort=-%cpu
+root        2937  0.9  0.0      0     0 ?        I    12:31   0:13 [kworker/0:2-events]
+sankar      3005  0.0  0.3  15120  6828 ?        S    12:33   0:00 sshd: sankar@pts/1
+root        2405  0.0  2.1 672808 43364 ?        Ssl  08:39   0:02 /usr/libexec/fwupd/fwupd
+root        2948  0.0  0.0      0     0 ?        I    12:33   0:00 [kworker/u2:4-events_power_efficient]
+root        2412  0.0  0.4 314320  9344 ?        Ssl  08:39   0:02 /usr/libexec/upowerd
+root           1  0.0  0.6  22452 13576 ?        Ss   07:38   0:02 /sbin/init splash noprompt noshell automatic-ubiquity
+root        2927  0.0  0.0      0     0 ?        I    12:05   0:00 [kworker/u2:2-writeback]
+root        2617  0.0  0.0      0     0 ?        I    08:45   0:01 [kworker/u2:3-events_power_efficient]
+
